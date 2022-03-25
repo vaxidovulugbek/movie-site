@@ -8,8 +8,8 @@ let ofcanvasitem = document.querySelector(".ofcanvas-item")
 let elcarouselitem1 = document.querySelector("#carusel-item1")
 let elcarouselitem2 = document.querySelector("#carusel-item2")
 let elcarouselitem3 = document.querySelector("#carusel-item3")
-let elrightarrow = document.querySelectorAll(".right-arrow")
-let elleftarrow = document.querySelectorAll(".left-arrow")
+// let elrightarrow = document.querySelectorAll(".right-arrow")
+// let elleftarrow = document.querySelectorAll(".left-arrow")
 
 // let elheart = document.querySelector("#items__btn")
 
@@ -39,13 +39,13 @@ let elleftarrow = document.querySelectorAll(".left-arrow")
 //     menuList.appendChild(li);
 // }
 
-
+let idx = 0;
 for (let i = 0; i < 10; i++) {
   let div = document.createElement("div");
   div.className = "item";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -60,8 +60,8 @@ for (let i = 0; i < 10; i++) {
   </div>
   <span class="items__category">${movies[i].categories}</span>
   <div>
-    <button class="items__modal" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">modal</button>
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <button class="items__modal" data-bs-target="#exampleModalToggle${idx}" data-bs-toggle="modal">modal</button>
+    <div class="modal fade" id="exampleModalToggle${idx}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
@@ -84,7 +84,7 @@ for (let i = 0; i < 10; i++) {
   </div>
   </div>
   `;
-
+  idx++;
   elnewitem.appendChild(div);
 }
 
@@ -92,13 +92,13 @@ for (let i = 0; i < 10; i++) {
 
 
 
-
+let idx2 = 20;
 for (let i = 20; i < 30; i++) {
   let div = document.createElement("div");
   div.className = "item";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -113,8 +113,8 @@ for (let i = 20; i < 30; i++) {
   </div>
   <span class="items__category">${movies[i].categories}</span>
   <div>
-    <button class="items__modal" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">modal</button>
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <button class="items__modal" data-bs-target="#exampleModalToggle${idx2}" data-bs-toggle="modal">modal</button>
+    <div class="modal fade" id="exampleModalToggle${idx2}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
@@ -137,23 +137,23 @@ for (let i = 20; i < 30; i++) {
   </div>
   </div>
   `;
-
+  idx2++
   elnewitem2.appendChild(div);
 }
 
 
 
-
+let idx3 = 30
 for (let i = 30; i < 40; i++) {
   let div = document.createElement("div");
   div.className = "item";
   div.innerHTML = `<div class="items3">
   <img id="items__img3" src="${movies[i].youtubePoster}" alt="">
-  <button id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">${movies[i].title} USA,${movies[i].year}</p>
   <div>
-    <button class="items__modal" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">modal</button>
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <button class="items__modal" data-bs-target="#exampleModalToggle${idx3}" data-bs-toggle="modal">modal</button>
+    <div class="modal fade" id="exampleModalToggle${idx3}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
@@ -176,21 +176,21 @@ for (let i = 30; i < 40; i++) {
   </div>
   </div>
   `;
-
+  idx3++
   elnewitem3.appendChild(div);
 }
 
-
+let idx4 = 50
 for (let i = 50; i < 60; i++) {
   let div = document.createElement("div");
   div.className = "item";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">${movies[i].title} USA,${movies[i].year}</p>
   <div>
-    <button class="items__modal" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">modal</button>
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <button class="items__modal" data-bs-target="#exampleModalToggle${idx4}" data-bs-toggle="modal">modal</button>
+    <div class="modal fade" id="exampleModalToggle${idx4}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
@@ -213,26 +213,26 @@ for (let i = 50; i < 60; i++) {
   </div>
   </div>
   `;
-
+  idx4++
   elnewitem4.appendChild(div);
 }
 
 // OFCANVAS
-for (let i = 50; i < 60; i++) {
-  let div = document.createElement("div");
-  div.className = "item";
-  div.innerHTML = `<div class="items">
-  <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <p id="items__date">USA,${movies[i].year}</p>
-  <p id="items__movie-name">${movies[i].title}</p>
-  <span id="items__ranking">${movies[i].imdbRating} / 10</span>
-  <span class="items__category">${movies[i].categories}</span>
+// for (let i = 50; i < 60; i++) {
+//   let div = document.createElement("div");
+//   div.className = "item";
+//   div.innerHTML = `<div class="items">
+//   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
+//   <p id="items__date">USA,${movies[i].year}</p>
+//   <p id="items__movie-name">${movies[i].title}</p>
+//   <span id="items__ranking">${movies[i].imdbRating} / 10</span>
+//   <span class="items__category">${movies[i].categories}</span>
 
-  </div>
-  `;
+//   </div>
+//   `;
 
-  ofcanvasitem.appendChild(div);
-}
+//   ofcanvasitem.appendChild(div);
+// }
 
 
 
@@ -325,21 +325,24 @@ for (let i = 3; i < 4; i++) {
 </div>`;
 elcarouselitem3.appendChild(div);
 }
-
-
-for (let j = 0; j < elleftarrow.length; j++) {
-  elleftarrow[j].addEventListener("click", translateleft)
-  elrightarrow[j].addEventListener("click", translaterigt)
-}
-function  translaterigt () {
-  elnewitem.style.transform = "translate(-250px)"
-  elnewitem.style.transition = "all 1s"
-}
-function  translateleft () {
-  elnewitem.style.transform = "translate(250px)"
-  elnewitem.style.transition = "all 1s"
-}
-
+// men slider
+// let count = 0
+// for (let j = 0; j < elleftarrow.length; j++) {
+//   elleftarrow[j].addEventListener("click", translateleft)
+//   // elrightarrow[j].addEventListener("click", translaterigt)
+// }
+// function  translaterigt () {
+//   for (let i = 0; i < elleftarrow.length; i++) {
+//     count++
+//     if ()
+//   }
+//   elnewitem.style.transform = "translate(-250px)"
+//   elnewitem.style.transition = "all 1s"
+// }
+// function  translateleft () {
+//   elnewitem.style.transform = "translate(250px)"
+//   elnewitem.style.transition = "all 1s"
+// }
 
 
 
@@ -364,16 +367,57 @@ function  translateleft () {
 // });
 
 
+// shu joyidan modalga element qoshiladi .ishlamadi
+let elheart = document.querySelectorAll(".items-btn")
+for(let s = 0; s < elheart.length; s++) {
+  elheart[s].addEventListener("click" ,()=> {
+
+      let div = document.createElement("div");
+      div.className = "item";
+      div.innerHTML = `<div class="items">
+      <img id="items__img" src="${movies[s].youtubePoster}" alt="">
+      <p id="items__date">USA,${movies[s].year}</p>
+      <p id="items__movie-name">${movies[s].title}</p>
+      <span id="items__ranking">${movies[s].imdbRating} / 10</span>
+      <span class="items__category">${movies[s].categories}</span>
+    
+      </div>
+      `;
+     
+    // console.log(e.target.parentElement.parentElement);
+    ofcanvasitem.appendChild(div);
+  })
+}
 
 
-// elheart.addEventListener("click" ,()=> {
-//   console.log("hello p");
-// })
+// for (let i = 50; i < 60; i++) {
+  // let div = document.createElement("div");
+  // div.className = "item";
+  // div.innerHTML = `<div class="items">
+  // <img id="items__img" src="${movies[i].youtubePoster}" alt="">
+  // <p id="items__date">USA,${movies[i].year}</p>
+  // <p id="items__movie-name">${movies[i].title}</p>
+  // <span id="items__ranking">${movies[i].imdbRating} / 10</span>
+  // <span class="items__category">${movies[i].categories}</span>
+
+  // </div>
+  // `;
+
+//   ofcanvasitem.appendChild(div);
+// }
 
 
 
 
-
+// let pustoy = []
+// let elheart = document.querySelectorAll(".items-btn")
+// for(let s = 0; s < elheart.length; s++) {
+//   elheart[s].addEventListener("click" ,(e)=> {
+//     console.log(e.target.parentElement.parentElement);
+//     pustoy[s].appendChild(e.target.parentElement.parentElement)
+//     ofcanvasitem.appendChild(pustoy[s]);
+//   })
+// }
 
 
 
