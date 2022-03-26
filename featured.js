@@ -521,37 +521,105 @@ for (let i = 9; i < 10; i++) {
 
 
 
-
 // // shu joyidan modalga element qoshiladi .ishlamadi
-// let elheart = document.querySelectorAll(".items-btn")
-// for(let s = 0; s < elheart.length; s++) {
-//   elheart[s].addEventListener("click" ,(e)=> {
-//     console.log(e.target);
+let elheart = document.querySelectorAll(".items-btn")
+for(let s = 0; s < elheart.length; s++) {
+  elheart[s].addEventListener("click" ,(e)=> {
+    console.log(e.target);
 
-//       let div = document.createElement("div");
-//       div.className = "item";
-//       div.innerHTML = `<div class="items">
-//       <img id="items__img" src="${movies[s].youtubePoster}" alt="">
-//       <p id="items__date">USA,${movies[s].year}</p>
-//       <p id="items__movie-name">${movies[s].title}</p>
-//       <span id="items__ranking">${movies[s].imdbRating} / 10</span>
-//       <span class="items__category">${movies[s].categories}</span>
+      let div = document.createElement("div");
+      div.className = "item5";
+      div.innerHTML = `<div class="items">
+      <img id="items__img" src="${movies[s].youtubePoster}" alt="">
+      <p id="items__date">USA,${movies[s].year}</p>
+      <p id="items__movie-name">${movies[s].title}</p>
+      <span id="items__ranking">${movies[s].imdbRating} / 10</span>
+      <span class="items__category">${movies[s].categories}</span>
     
-//       </div>
-//       `;
+      </div>
+      `;
      
-//     console.log(e.target.parentElement.parentElement.parentElement.parentElement);
-//     ofcanvasitem.appendChild(div);
+    console.log(e.target.parentElement.parentElement.parentElement.parentElement);
+    ofcanvasitem.appendChild(div);
+  })
+}
+
+
+
+
+
+
+
+
+
+// ofcanvasga element qoshish
+
+// const elBtn = document.querySelectorAll(".items-btn");
+// const elCanvas = document.querySelector(".ofcanvas-list");
+// // let elheart = document.querySelectorAll(".items-btn")
+
+// for(let s = 0; s < elheart.length; s++) {
+//   elBtn[s].addEventListener("click",func)
+// }
+// function func(aaa){
+//   movies.forEach((item ) => {
+//     if(aaa == item.imdbId){
+//       let li = document.createElement("li");
+//       li.className = 'movie__main';
+//       li.innerHTML = `
+//       <div class="movie__item item">
+//       <div class="item__imgbox">
+//         <img class="item__img" src="${item.youtubePoster}" alt="movie__img">
+//         <div class="movie__btns d-flex align-items-center justify-content-between">
+//           <p class="movie__tv text-uppercase mb-0">tv series</p>
+//           <button class="movie__btn"><i class='bx bxs-heart' ></i></button>
+//         </div>
+//       </div>
+//       <div class="d-flex align-items-center justify-content-between mb-3">
+//         <span class="item__years">USA, ${item.year}</span>
+//         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal${idx}">
+//           More
+//         </button>
+  
+//         <!-- Modal -->
+//         <div class="modal fade" id="exampleModal${idx}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+//           <div class="modal-dialog">
+//             <div class="modal-content">
+//               <div class="modal-header">
+//                 <h5 class="modal-title" id="exampleModalLabel">About Movie</h5>
+//                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+//               </div>
+//               <div class="modal-body d-flex col-12">
+//                 <div class="col-6 p-3">
+//                   <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${item.youtubeId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+//                 </div>
+//                 <div class="col-6 p-3">${item.summary}</div>
+//               </div>
+  
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//       <h4 class="item__title">${item.title}</h4>
+//       <div class="item__box d-flex align-items-center justify-content-between">
+//         <div class="d-flex align-items-center">
+//           <img class="movie__imdb" src="imgs/imdb.png" alt="imdb">
+//         <span class="item__range">${item.runtime}</span>
+//         </div>
+//         <div class="d-flex align-items-center">
+//           <i class='bx bxs-star' style='color:#d8e818'></i>
+//           <span class="item__percent">${item.imdbRating}</span>
+//         </div>
+//       </div>
+//       <div>
+//         <span class="item__category text-capitalize">${item.categories}</span>
+//       </div>
+//     </div>
+//   `;
+//       elCanvas.appendChild(li);
+//     }
 //   })
 // }
-
-
-
-
-
-
-
-
 
 
 

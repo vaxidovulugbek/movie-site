@@ -15,7 +15,6 @@ for (let i = 21; i < 22; i++) {
   div.className = "item2";
   div.innerHTML = `<div>
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__movie-name">${movies[i].title}</p>
   `;
   idx31++;
@@ -29,7 +28,6 @@ for (let i = 22; i < 23; i++) {
   div.className = "item2";
   div.innerHTML = `<div>
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__movie-name">${movies[i].title}</p>
   `;
   idx32++;
@@ -44,7 +42,6 @@ for (let i = 23; i < 24; i++) {
   div.className = "item2";
   div.innerHTML = `<div>
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__movie-name">${movies[i].title}</p>
   `;
   idx33++;
@@ -58,7 +55,6 @@ for (let i = 24; i < 25; i++) {
   div.className = "item2";
   div.innerHTML = `<div>
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__movie-name">${movies[i].title}</p>
   `;
   idx34++;
@@ -74,7 +70,6 @@ for (let i = 25; i < 26; i++) {
   div.className = "item2";
   div.innerHTML = `<div>
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__movie-name">${movies[i].title}</p>
   `;
   idx35++;
@@ -89,7 +84,6 @@ for (let i = 26; i < 27; i++) {
   div.className = "item2";
   div.innerHTML = `<div>
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__movie-name">${movies[i].title}</p>
   `;
   idx36++;
@@ -104,7 +98,6 @@ for (let i = 27; i < 28; i++) {
   div.className = "item2";
   div.innerHTML = `<div>
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__movie-name">${movies[i].title}</p>
   `;
   idx37++;
@@ -120,7 +113,6 @@ for (let i = 28; i < 29; i++) {
   div.className = "item2";
   div.innerHTML = `<div>
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__movie-name">${movies[i].title}</p>
   `;
   idx38++;
@@ -135,7 +127,6 @@ for (let i = 29; i < 30; i++) {
   div.className = "item2";
   div.innerHTML = `<div>
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__movie-name">${movies[i].title}</p>
   `;
   idx39++;
@@ -150,10 +141,14 @@ for (let i = 30; i < 31; i++) {
   div.className = "item2";
   div.innerHTML = `<div>
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__movie-name">${movies[i].title}</p>
   `;
   idx40++;
   elnewitem30.appendChild(div);
 }
+
+
+
+
+
 

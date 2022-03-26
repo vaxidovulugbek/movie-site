@@ -15,7 +15,7 @@ for (let i = 31; i < 32; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -65,7 +65,7 @@ for (let i = 32; i < 33; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -116,7 +116,7 @@ for (let i = 33; i < 34; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -166,7 +166,7 @@ for (let i = 34; i < 35; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -218,7 +218,7 @@ for (let i = 35; i < 36; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -269,7 +269,7 @@ for (let i = 36; i < 37; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -320,7 +320,7 @@ for (let i = 37; i < 38; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -372,7 +372,7 @@ for (let i = 38; i < 39; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -423,7 +423,7 @@ for (let i = 39; i < 40; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -474,7 +474,7 @@ for (let i = 40; i < 41; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -516,4 +516,38 @@ for (let i = 40; i < 41; i++) {
   idx50++;
   elnewitem40.appendChild(div);
 }
+
+
+
+// shu joyidan modalga element qoshiladi .ishlamadi
+let elheart3 = document.querySelectorAll(".items-btn3")
+for(let s = 0; s < elheart3.length; s++) {
+  elheart3[s].addEventListener("click" ,(e)=> {
+    console.log(e.target);
+
+      let div = document.createElement("div");
+      div.className = "item5";
+      div.innerHTML = `<div class="items">
+      <img id="items__img" src="${movies[s].youtubePoster}" alt="">
+      <p id="items__date">USA,${movies[s].year}</p>
+      <p id="items__movie-name">${movies[s].title}</p>
+      <span id="items__ranking">${movies[s].imdbRating} / 10</span>
+      <span class="items__category">${movies[s].categories}</span>
+    
+      </div>
+      `;
+    console.log(e.target.parentElement.parentElement.parentElement.parentElement);
+    ofcanvasitem.appendChild(div);
+  })
+}
+
+
+
+
+
+
+
+
+
+
 

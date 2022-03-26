@@ -2,20 +2,44 @@
 let menuList = document.querySelector(".list")
 let elnewitem = document.querySelector(".newitem")
 let ofcanvasitem = document.querySelector(".ofcanvas-item")
+let elofcanvaslist = document.querySelector(".ofcanvas-list")
 let elcarouselitem1 = document.querySelector("#carusel-item1")
 let elcarouselitem2 = document.querySelector("#carusel-item2")
 let elcarouselitem3 = document.querySelector("#carusel-item3")
+let eldatalist =document.querySelector(".datalist")
+// let eloption = createElement("option")
+// eloption.innerHTML = `${movies.categories}`
+// eldatalist.appendChild(eloption)
+
 
 let elheaderForm = document.querySelector("#header-form")
 let elheaderSearch = document.querySelector("#header__search")
-
 
 elheaderForm.addEventListener("submit", (e) => {
   e.preventDefault()
   console.log(elheaderSearch.value);
 })
 
-
+// SEARCH HOLATI HERODAGI
+// elheaderSearch.addEventListener("keyup" , searchel)
+// function searchel (e) {
+//   let textlar = e.target.value.toLowerCase()
+//   // let elementlar = elofcanvaslist.getElementsByTagName("li")
+//   let elmovi = movies.filter((el) => {
+   
+//     // console.log(Array.from(el.title));
+//     for (let i = 0; i < Array.from(el.title).length; i++) {
+//       let newelement = el.title[i]
+//       // console.log(newelement);
+//       if (newelement.toLocaleLowerCase().indexOf(textlar) != -1) {
+//         // console.log(textlar);
+//         // el.title[i].pare.style.display = "none"
+//         console.log(el.title);
+//         // el.title.style.color = "red"
+//       }
+//     }
+//   })
+// }
 
 
 // let elheart = document.querySelector("#items__btn")
@@ -257,14 +281,6 @@ elcarouselitem3.appendChild(div);
 //     ofcanvasitem.appendChild(pustoy[s]);
 //   })
 // }
-
-
-
-
-
-
-
-
 
 
 
