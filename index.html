@@ -1,544 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>WaltzerJS - jQuery Carousel Plugin</title>
-    <meta name="description" content="WaltzerJS - jQuery Carousel Plugin by Scott Carmichael" />
-    <meta name="keywords" content="WaltzerJS, jQuery, Carousel, Plugin, Scott Carmichael" />
-    <link href="./assets/css/stylesheet.css" rel="stylesheet" type="text/css" media="all"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-    <link href="./examples/css/styles.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="./examples/css/styles.css" rel="stylesheet" type="text/css" media="all"/>
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-    <script type="text/javascript" src="waltzerjs.js"></script>
-
- <!-- Google font library -->
- <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
- <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="waltzerjs.js"></script>
 </head>
-
 <body>
-<!-- 
-<h1>Waltzer<span>JS</span> - jQuery Carousel Plugin</h1>
-
-<br />
-
-<div class='outerWrapper' style="height:auto;">
-
-    <h2>What's The Idea?</h2>
-
-    <p>Carousel plugins are a pain to configure, a pain to skin and far too heavy so here's the beginings of my alternative.</p>
-    <a href="https://github.com/carmichaelize/waltzer-js" class="lobster">Docs and Download on Github</a>.
-
-</div> -->
-
-<h2>Example 1 <span>- Scroll 1</span></h2>
-
-<div id="carousel1" class='outerWrapper'>
-    <div class="item">
-        <div>1</div>
-    </div>
-    <div class="item">
-        <div>2</div>
-    </div>
-    <div class="item">
-        <div>3</div>
-    </div>
-    <div class="item">
-        <div>4</div>
-    </div>
-    <div class="item">
-        <div>5</div>
-    </div>
-    <div class="item">
-        <div>6</div>
-    </div>
-    <div class="item">
-        <div>7</div>
-    </div>
-    <div class="item">
-        <div>8</div>
-    </div>
-    <div class="item">
-        <div>9</div>
-    </div>
-    <div class="item">
-        <div>10</div>
-    </div>
-    <div class="item">
-        <div>11</div>
-    </div>
-    <div class="item">
-        <div>12</div>
-    </div>
-</div>
-
-<script>$('#carousel1').waltzer({scroll:1});</script>
-
-<!-- <h2>Example 1 <span>- Scroll 1</span></h2>
-<div id="outerWrapper" class='outerWrapper'>
-    <div class="leftNav"></div>
-        <div class="item">
-            <div>1</div>
+  <div class="content"> 
+    <div class="container">
+      <header class="header">
+        <a class="logo" href="#"><img class="logo-img" src="img/logo.svg" alt="logo"></a>
+        <form id="header-form" class="d-flex align-items-center">
+          <input type="search" id="header__search" placeholder="What do you want to watch?" >
+          <button id="search-btn" ><i class='bx bx-search'></i></button>
+        </form>
+        <div>
+          <button id="heart-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Movies Menu</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="ofcanvas-list">
+                <li class="ofcanvas-item">
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="item">
-            <div>2</div>
+      </header>
+    </div>
+      <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div id="carusel-item1" class="carousel-item active">
+            <img src="img/hero-bg.png" class="d-block w-100 carusel-pic" alt="...">
+          </div>
+          <div id="carusel-item2" class="carousel-item">
+            <img src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2019/03/endgame-poster-feature.jpg?q=50&fit=crop&w=943&h=500&dpr=1.5" class="d-block w-100 carusel-pic" alt="...">
+          </div>
+          <div id="carusel-item3" class="carousel-item">
+            <img src="https://library.sportingnews.com/2021-08/img-academy-ftr-img-051220jpg_itu9cfptrglm1rucdqzbuo2f0.jpg" class="d-block w-100 carusel-pic" alt="...">
+          </div>
         </div>
-        <div class="item">
-            <div>3</div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
+
+      <!-- CARUSEL PART========================================== -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">1</button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">2</button>
         </div>
-        <div class="item">
-            <div>4</div>
+        <div class="carousel-inner">
+          <div id="carusel-item1"  class="carousel-item active">
+
+          </div>
+          <div id="carusel-item2" class="carousel-item">
+
+          </div>
+          <div id="carusel-item3" class="carousel-item">
+
+          </div>
         </div>
-        <div class="item">
-            <div>5</div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button> -->
+        <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+      </div>
+
+
+  </div>
+<main>
+  <div class="container">
+    <div class="form-content">
+        <form id="form" class="d-flex align-items-center">
+          <input class="category input" type="text" list="date">
+          <datalist id="date">
+            <option>Action</option>
+            <option>Biography</option>
+            <option>Documentary</option>
+            <option>Drama</option>
+            <option>Family</option>
+            <option>History</option>
+            <option>Thriller</option>
+            <option>Music</option>
+            <option>Romance</option>
+            <option>Comedy</option>
+            <option>Adventure</option>
+            <option>News</option>
+          </datalist>
+          <input type="search" id="search-input" class="input" placeholder="search movie">
+          <input class="input" id="last-name" type="number" placeholder="start" required>
+          <input class="input" id="tel" type="number" placeholder="end" required>
+          
+          <button class="btn btn-primary" type="submit">submit</button>
+        </form>
+    </div>
+    <!-- ========================= START FEATURED VIDEOS ==================== -->
+    <div class="feature">
+      <div class="d-flex align-items-center justify-content-between mt-5 mb-5">
+        <h2 class="see-title">Featured Movie</h2>
+        <button class="d-flex align-items-center btn-see">See more <i class='bx bx-chevron-right ms-2'></i></button>
+      </div>
+        <div id="carousel1" class='outerWrapper' >
+          <div class="item newitem1"></div>
+          <div class="item newitem2"></div>
+          <div class="item newitem3"></div>
+          <div class="item newitem4"></div>
+          <div class="item newitem5"></div>
+          <div class="item newitem6"></div>
+          <div class="item newitem7"></div>
+          <div class="item newitem8"></div>
+          <div class="item newitem9"></div>
+          <div class="item newitem10"></div>
         </div>
-        <div class="item">
-            <div>6</div>
-        </div>
-        <div class="item">
-            <div>7</div>
-        </div>
-        <div class="item">
-            <div>8</div>
-        </div>
-        <div class="item">
-            <div>9</div>
-        </div>
-        <div class="item">
-            <div>10</div>
-        </div>
-        <div class="item">
-            <div>11</div>
-        </div>
-        <div class="item">
-            <div>12</div>
-        </div>
-    <div class="rightNav"></div>
-</div> -->
+      </div>
 
-<!-- <h2>Example 2 <span>- Scroll 5, Start at Item 3</span></h2>
-<div id="outerWrapper2" class='outerWrapper'>
-    <div class="leftNav"></div>
-        <div class="item">
-            <div>1</div>
-        </div>
-        <div class="item">
-            <div>2</div>
-        </div>
-        <div class="item">
-            <div>3</div>
-        </div>
-        <div class="item">
-            <div>4</div>
-        </div>
-        <div class="item">
-            <div>5</div>
-        </div>
-        <div class="item">
-            <div>6</div>
-        </div>
-        <div class="item">
-            <div>7</div>
-        </div>
-        <div class="item">
-            <div>8</div>
-        </div>
-        <div class="item">
-            <div>9</div>
-        </div>
-        <div class="item">
-            <div>10</div>
-        </div>
-        <div class="item">
-            <div>11</div>
-        </div>
-        <div class="item">
-            <div>12</div>
-        </div>
-        <div class="item">
-            <div>13</div>
-        </div>
-        <div class="item">
-            <div>14</div>
-        </div>
-        <div class="item">
-            <div>15</div>
-        </div>
-    <div class="rightNav"></div>
-</div> -->
-<!-- 
-<h2>Example 2 <span>- Scroll 5, start at item 3</span></h2>
+    <div class="feature">
+      <div class="d-flex align-items-center justify-content-between mt-5 mb-5">
+        <h2 class="see-title">New Arrival</h2>
+        <button class="d-flex align-items-center btn-see">See more <i class='bx bx-chevron-right ms-2'></i></button>
+      </div>
+      <div id="carousel2" class='outerWrapper' >
+        <div class="item newitem11"></div>
+        <div class="item newitem12"></div>
+        <div class="item newitem13"></div>
+        <div class="item newitem14"></div>
+        <div class="item newitem15"></div>
+        <div class="item newitem16"></div>
+        <div class="item newitem17"></div>
+        <div class="item newitem18"></div>
+        <div class="item newitem19"></div>
+        <div class="item newitem20"></div>
+      </div>
+    </div>
 
-<div id="carousel2" class='outerWrapper outerWrapper2'>
-    <div class="item">
-        <div>1</div>
-    </div>
-    <div class="item">
-        <div>2</div>
-    </div>
-    <div class="item">
-        <div>3</div>
-    </div>
-    <div class="item">
-        <div>4</div>
-    </div>
-    <div class="item">
-        <div>5</div>
-    </div>
-    <div class="item">
-        <div>6</div>
-    </div>
-    <div class="item">
-        <div>7</div>
-    </div>
-    <div class="item">
-        <div>8</div>
-    </div>
-    <div class="item">
-        <div>9</div>
-    </div>
-    <div class="item">
-        <div>10</div>
-    </div>
-    <div class="item">
-        <div>11</div>
-    </div>
-    <div class="item">
-        <div>12</div>
-    </div>
-    <div class="item">
-        <div>13</div>
-    </div>
-    <div class="item">
-        <div>14</div>
-    </div>
-    <div class="item">
-        <div>15</div>
-    </div>
-</div>
 
-<script>
-    $('#carousel2').waltzer({
-        auto:true,
-        autoPause: 5000,
-        scroll:5,
-        offset:2
-    });
-</script>
+    <!--======================== START EXCLUSIVE VEDEOS================== -->
+    <div class="feature">
+      <div class="d-flex align-items-center justify-content-between mt-5 mb-5">
+        <h2 class="see-title">Exclusive Videos</h2>
+        <button class="d-flex align-items-center btn-see">See more <i class='bx bx-chevron-right ms-2'></i></button>
+      </div>
+      <div id="carousel3" class='outerWrapper' >
+        <div class="item2 newitem21"></div>
+        <div class="item2 newitem22"></div>
+        <div class="item2 newitem23"></div>
+        <div class="item2 newitem24"></div>
+        <div class="item2 newitem25"></div>
+        <div class="item2 newitem26"></div>
+        <div class="item2 newitem27"></div>
+        <div class="item2 newitem28"></div>
+        <div class="item2 newitem29"></div>
+        <div class="item2 newitem30"></div>
+      </div>
+      
+    </div>
+<!-- ======================== START Featured Casts ===================== -->
+    <div class="feature">
+      <div class="d-flex align-items-center justify-content-between mt-5 mb-5">
+        <h2 class="see-title">Featured Casts</h2>
+        <button class="d-flex align-items-center btn-see">See more <i class='bx bx-chevron-right ms-2'></i></button>
+      </div>
+      <div id="carousel4" class='outerWrapper' >
+        <div class="item newitem31"></div>
+        <div class="item newitem32"></div>
+        <div class="item newitem33"></div>
+        <div class="item newitem34"></div>
+        <div class="item newitem35"></div>
+        <div class="item newitem36"></div>
+        <div class="item newitem37"></div>
+        <div class="item newitem38"></div>
+        <div class="item newitem39"></div>
+        <div class="item newitem40"></div>
+      </div>
+    </div>
+    
+  </div>
+</main>
 
-<h2>Example 3 <span>- Scroll 4, non-circular</span></h2>
-
-<div id="carousel3" class='outerWrapper'>
-    <div class="item">
-        <div>1</div>
-    </div>
-    <div class="item">
-        <div>2</div>
-    </div>
-    <div class="item">
-        <div>3</div>
-    </div>
-    <div class="item">
-        <div>4</div>
-    </div>
-    <div class="item">
-        <div>5</div>
-    </div>
-    <div class="item">
-        <div>6</div>
-    </div>
-    <div class="item">
-        <div>7</div>
-    </div>
-    <div class="item">
-        <div>8</div>
-    </div>
-    <div class="item">
-        <div>9</div>
-    </div>
-    <div class="item">
-        <div>10</div>
-    </div>
-    <div class="item">
-        <div>11</div>
-    </div>
-    <div class="item">
-        <div>12</div>
-    </div>
-</div>
-
-<script>
-    $('#carousel3').waltzer({
-        scroll:4,
-        circular:false
-    });
-</script>
-
-<h2>Example 4 <span>- Scroll 4 with pager</span></h2>
-
-<div id="carousel4" class='outerWrapper'>
-    <div class="item">
-        <div>1</div>
-    </div>
-    <div class="item">
-        <div>2</div>
-    </div>
-    <div class="item">
-        <div>3</div>
-    </div>
-    <div class="item">
-        <div>4</div>
-    </div>
-    <div class="item">
-        <div>5</div>
-    </div>
-    <div class="item">
-        <div>6</div>
-    </div>
-    <div class="item">
-        <div>7</div>
-    </div>
-    <div class="item">
-        <div>8</div>
-    </div>
-    <div class="item">
-        <div>9</div>
-    </div>
-    <div class="item">
-        <div>10</div>
-    </div>
-    <div class="item">
-        <div>11</div>
-    </div>
-    <div class="item">
-        <div>12</div>
-    </div>
-</div>
-
-<script>
-    $('#carousel4').waltzer({
-        scroll:4,
-        navBtns: false,
-        pager:true
-    });
-</script>
-
-<h2>Example 5 <span>- Scroll 1, vertical and non-circular</span></h2>
-
-<div id="carousel5" class='outerWrapper vert'>
-    <div class="item">
-        <div>1</div>
-    </div>
-    <div class="item">
-        <div>2</div>
-    </div>
-    <div class="item">
-        <div>3</div>
-    </div>
-    <div class="item">
-        <div>4</div>
-    </div>
-    <div class="item">
-        <div>5</div>
-    </div>
-    <div class="item">
-        <div>6</div>
-    </div>
-    <div class="item">
-        <div>7</div>
-    </div>
-</div>
-
-<script>
-    $('#carousel5').waltzer({
-        scroll:1,
-        vertical:true,
-        circular:false,
-        speed:500,
-        left_nav_btn:'.topNav',
-        right_nav_btn:'.botNav'
-    });
-</script>
-
-<h2>Example 6 <span>- Scroll 2, vertical</span></h2>
-
-<div id="carousel6" class='outerWrapper vert'>
-    <div class="item">
-        <div>1</div>
-    </div>
-    <div class="item">
-        <div>2</div>
-    </div>
-    <div class="item">
-        <div>3</div>
-    </div>
-    <div class="item">
-        <div>4</div>
-    </div>
-    <div class="item">
-        <div>5</div>
-    </div>
-    <div class="item">
-        <div>6</div>
-    </div>
-</div>
-
-<script>
-    $('#carousel6').waltzer({
-        scroll:2,
-        vertical:true,
-        speed:500,
-        left_nav_btn:'.topNav',
-        right_nav_btn:'.botNav'
-    });
-</script>
-
-<h2>Example 7 <span>- Auto scroll, scroll 5 with custom page counter</span></h2>
-
-<div id="carousel7" class='outerWrapper outerWrapper2'>
-    <div class="item">
-        <div>1</div>
-    </div>
-    <div class="item">
-        <div>2</div>
-    </div>
-    <div class="item">
-        <div>3</div>
-    </div>
-    <div class="item">
-        <div>4</div>
-    </div>
-    <div class="item">
-        <div>5</div>
-    </div>
-    <div class="item">
-        <div>6</div>
-    </div>
-    <div class="item">
-        <div>7</div>
-    </div>
-    <div class="item">
-        <div>8</div>
-    </div>
-    <div class="item">
-        <div>9</div>
-    </div>
-    <div class="item">
-        <div>10</div>
-    </div>
-    <div class="item">
-        <div>11</div>
-    </div>
-    <div class="item">
-        <div>12</div>
-    </div>
-    <div class="item">
-        <div>13</div>
-    </div>
-    <div class="item">
-        <div>14</div>
-    </div>
-    <div class="item">
-        <div>15</div>
-    </div>
-</div>
-
-<div id="counter7"></div>
-
-<script>
-    var counter = function(){
-        var currentPage = this.pageCount,
-            itemCount = this.itemCount,
-            scrollItems = this.options.scroll;
-        $('#counter7').html(currentPage+' / '+(itemCount / scrollItems));
-    }
-
-    $('#carousel7').waltzer({
-        scroll:5,
-        auto: true,
-        autoPause: 10000,
-        onCreate: counter,
-        onComplete: counter
-    });
-</script>
-
-<h2>Example 8 <span>- Auto scroll, scroll 5 with custom page counter</span></h2>
-
-<div id="carousel8" class='outerWrapper'>
-    <div class="item">
-        <div>1</div>
-    </div>
-    <div class="item">
-        <div>2</div>
-    </div>
-    <div class="item">
-        <div>3</div>
-    </div>
-    <div class="item">
-        <div>4</div>
-    </div>
-    <div class="item">
-        <div>5</div>
-    </div>
-    <div class="item">
-        <div>6</div>
-    </div>
-    <div class="item">
-        <div>7</div>
-    </div>
-    <div class="item">
-        <div>8</div>
-    </div>
-    <div class="item">
-        <div>9</div>
-    </div>
-    <div class="item">
-        <div>10</div>
-    </div>
-    <div class="item">
-        <div>11</div>
-    </div>
-    <div class="item">
-        <div>12</div>
-    </div>
-</div>
-
-<div id="counter8">
-    <button id="control_btn8">Stop</button>
-</div>
-
-<script>
-    $('#carousel8').waltzer({
-        scroll:4,
-        auto: true,
-        autoPause: 8000,
-    });
-
-    $('#control_btn8').on('click', function(){
-        if($(this).text() == 'Start') {
-            $(this).text('Stop');
-            $('#carousel8').waltzer('Stop');
-        } else if($(this).text() == 'Stop') {
-            $(this).text('Start');
-            $('#carousel8').waltzer('Start');
-        }
-    });
-</script> -->
-
-<footer>
-    All content &copy; <a href="http://www.scottcarmichael.co.uk">Scott Carmichael</a>
-
-    |
-
-    <a title="Twitter" href="https://twitter.com/carmichaelize">Twitter</a>
-
-    |
-
-    <a title="github" href="https://github.com/carmichaelize">github</a>
+<footer class="mb-4">
+  <div class="container">
+    <div class="d-flex flex-column align-items-center footer-content">
+      <ul class="footer-list d-flex align-items-center">
+        <li><a href="#"><i class='bx bxl-facebook-square'></i></a></li>
+        <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+        <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+        <li><a href="#"><i class='bx bxl-youtube' ></i></a></li>
+      </ul>
+      <div class="footer-info-content d-flex align-items-center">
+        <a class="footer-info" href="#">Conditions of Use</a>
+        <a class="footer-info" href="#">Privacy & Policy</a>
+        <a class="footer-info" href="#">Press Room</a>
+      </div>
+      <span>© 2021 MovieBox by Adriana Eka Prayudha  </span>
+    </div>
+  </div>
 </footer>
 
+<!-- <div class="container">
+  <div id="carousel1" class='outerWrapper' >
+    <div class="item newitem1"></div>
+    <div class="item " id="newitem2"></div>
+    <div class="item" id="newitem3"></div>
+    <div class="item newitem4"></div>
+    <div class="item newitem5"></div>
+    <div class="item newitem6"></div>
+    <div class="item newitem7"></div>
+    <div class="item newitem8"></div>
+    <div class="item newitem9"></div>
+    <div class="item newitem10"></div>
+  </div>
+</div> -->
+
+<script>$('#carousel1').waltzer({scroll:1});</script>
+<script>$('#carousel2').waltzer({scroll:1});</script>
+<script>$('#carousel3').waltzer({scroll:1});</script>
+<script>$('#carousel4').waltzer({scroll:1});</script>
+  <script src="normalized-movies.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  <script src="featured.js"></script>
+  <script src="new-arrival.js"></script>
+  <script src="exclusiv.js"></script>
+  <script src="featured-cast.js"></script>
 </body>
 </html>
+
