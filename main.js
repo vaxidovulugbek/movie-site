@@ -1,15 +1,22 @@
 
 let menuList = document.querySelector(".list")
 let elnewitem = document.querySelector(".newitem")
-let elnewitem2= document.querySelector(".newitem2")
-let elnewitem3= document.querySelector(".newitem3")
-let elnewitem4 = document.querySelector(".newitem4")
 let ofcanvasitem = document.querySelector(".ofcanvas-item")
 let elcarouselitem1 = document.querySelector("#carusel-item1")
 let elcarouselitem2 = document.querySelector("#carusel-item2")
 let elcarouselitem3 = document.querySelector("#carusel-item3")
-// let elrightarrow = document.querySelectorAll(".right-arrow")
-// let elleftarrow = document.querySelectorAll(".left-arrow")
+
+let elheaderForm = document.querySelector("#header-form")
+let elheaderSearch = document.querySelector("#header__search")
+
+
+elheaderForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+  console.log(elheaderSearch.value);
+})
+
+
+
 
 // let elheart = document.querySelector("#items__btn")
 
@@ -39,183 +46,9 @@ let elcarouselitem3 = document.querySelector("#carusel-item3")
 //     menuList.appendChild(li);
 // }
 
-let idx = 0;
-for (let i = 0; i < 10; i++) {
-  let div = document.createElement("div");
-  div.className = "item";
-  div.innerHTML = `<div class="items">
-  <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
-  <p id="items__date">USA,${movies[i].year}</p>
-  <p id="items__movie-name">${movies[i].title}</p>
-  <div class="items__info">
-    <div class="d-flex align-items-center">
-      <img class="me-2" src="img/imb.png" alt="" width="35" height="17">
-      <span id="items__ranking">${movies[i].imdbRating} / 10</span>
-    </div>
-    <div class="d-flex align-items-center">
-      <img class="me-2" src="img/potato.png" alt="" width="16" height="17">
-      <span id="items__procent">75%</span>
-    </div>
-  </div>
-  <span class="items__category">${movies[i].categories}</span>
-  <div>
-    <button class="items__modal" data-bs-target="#exampleModalToggle${idx}" data-bs-toggle="modal">modal</button>
-    <div class="modal fade" id="exampleModalToggle${idx}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <p class="modal-title modal-movi-name" id="modal__movie-name">${movies[i].title}</p>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body d-flex align-items-center">
-            <img class="modal-img me-4" src="${movies[i].youtubePoster}" alt="">
-            <div class="d-flex flex-column">
-              <p id="modal__date">USA, ${movies[i].year}</p>
-              <p class="modal-movi-name" id="modal__movie-name">${movies[i].title}</p>
-              <p>${movies[i].summary}</p>
-              <span id="modal__ranking">${movies[i].imdbRating} / 10</span>
-              <span class="items__category mt-5">${movies[i].categories}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  `;
-  idx++;
-  elnewitem.appendChild(div);
-}
 
 
 
-
-
-let idx2 = 20;
-for (let i = 20; i < 30; i++) {
-  let div = document.createElement("div");
-  div.className = "item";
-  div.innerHTML = `<div class="items">
-  <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
-  <p id="items__date">USA,${movies[i].year}</p>
-  <p id="items__movie-name">${movies[i].title}</p>
-  <div class="items__info">
-    <div class="d-flex align-items-center">
-      <img class="me-2" src="img/imb.png" alt="" width="35" height="17">
-      <span id="items__ranking">${movies[i].imdbRating} / 10</span>
-    </div>
-    <div class="d-flex align-items-center">
-      <img class="me-2" src="img/potato.png" alt="" width="16" height="17">
-      <span id="items__procent">75%</span>
-    </div>
-  </div>
-  <span class="items__category">${movies[i].categories}</span>
-  <div>
-    <button class="items__modal" data-bs-target="#exampleModalToggle${idx2}" data-bs-toggle="modal">modal</button>
-    <div class="modal fade" id="exampleModalToggle${idx2}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <p class="modal-title modal-movi-name" id="modal__movie-name">${movies[i].title}</p>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body d-flex align-items-center">
-            <img class="modal-img me-4" src="${movies[i].youtubePoster}" alt="">
-            <div class="d-flex flex-column">
-              <p id="modal__date">USA, ${movies[i].year}</p>
-              <p class="modal-movi-name" id="modal__movie-name">${movies[i].title}</p>
-              <p>${movies[i].summary}</p>
-              <span id="modal__ranking">${movies[i].imdbRating} / 10</span>
-              <span class="items__category mt-5">${movies[i].categories}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  `;
-  idx2++
-  elnewitem2.appendChild(div);
-}
-
-
-
-let idx3 = 30
-for (let i = 30; i < 40; i++) {
-  let div = document.createElement("div");
-  div.className = "item";
-  div.innerHTML = `<div class="items3">
-  <img id="items__img3" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
-  <p id="items__date">${movies[i].title} USA,${movies[i].year}</p>
-  <div>
-    <button class="items__modal" data-bs-target="#exampleModalToggle${idx3}" data-bs-toggle="modal">modal</button>
-    <div class="modal fade" id="exampleModalToggle${idx3}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <p class="modal-title modal-movi-name" id="modal__movie-name">${movies[i].title}</p>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body d-flex align-items-center">
-            <img class="modal-img me-4" src="${movies[i].youtubePoster}" alt="">
-            <div class="d-flex flex-column">
-              <p id="modal__date">USA, ${movies[i].year}</p>
-              <p class="modal-movi-name" id="modal__movie-name">${movies[i].title}</p>
-              <p>${movies[i].summary}</p>
-              <span id="modal__ranking">${movies[i].imdbRating} / 10</span>
-              <span class="items__category mt-5">${movies[i].categories}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  `;
-  idx3++
-  elnewitem3.appendChild(div);
-}
-
-let idx4 = 50
-for (let i = 50; i < 60; i++) {
-  let div = document.createElement("div");
-  div.className = "item";
-  div.innerHTML = `<div class="items">
-  <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
-  <p id="items__date">${movies[i].title} USA,${movies[i].year}</p>
-  <div>
-    <button class="items__modal" data-bs-target="#exampleModalToggle${idx4}" data-bs-toggle="modal">modal</button>
-    <div class="modal fade" id="exampleModalToggle${idx4}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <p class="modal-title modal-movi-name" id="modal__movie-name">${movies[i].title}</p>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body d-flex align-items-center">
-            <img class="modal-img me-4" src="${movies[i].youtubePoster}" alt="">
-            <div class="d-flex flex-column">
-              <p id="modal__date">USA, ${movies[i].year}</p>
-              <p class="modal-movi-name" id="modal__movie-name">${movies[i].title}</p>
-              <p>${movies[i].summary}</p>
-              <span id="modal__ranking">${movies[i].imdbRating} / 10</span>
-              <span class="items__category mt-5">${movies[i].categories}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  `;
-  idx4++
-  elnewitem4.appendChild(div);
-}
 
 // OFCANVAS
 // for (let i = 50; i < 60; i++) {
@@ -244,10 +77,12 @@ for (let i = 50; i < 60; i++) {
 
 
 
-for (let i = 0; i < 1; i++) {
+for (let i = 221; i < 222; i++) {
   let div = document.createElement("div");
   div.className = "menu__item pizza";
-  div.innerHTML = `<div class="container">
+  div.innerHTML = `
+  <img src="${movies[i].youtubePoster}" class="d-block w-100 carusel-pic" alt="...">
+  <div class="container">
   <div class="hero-content">
     <div class="hero">
       <div class="hero__info">
@@ -263,7 +98,7 @@ for (let i = 0; i < 1; i++) {
           </div>
         </div>
         <p class="hero__text">John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.</p>
-        <a class="d-flex align-items-center watch-link" href="https://youtu.be/M7XM597XO94"><img class="me-2" src="img/Play.svg" alt="play" width="20" height="20"><p class="watch-text">Watch trailer</p></a>
+        <a class="d-flex align-items-center watch-link" href="${movies[i].imdbPage}"><img class="me-2" src="img/Play.svg" alt="play" width="20" height="20"><p class="watch-text">Watch trailer</p></a>
       </div>
     </div>
   </div>
@@ -272,10 +107,12 @@ for (let i = 0; i < 1; i++) {
 elcarouselitem1.appendChild(div);
 }
 
-for (let i = 1; i < 2; i++) {
+for (let i = 777; i < 778; i++) {
   let div = document.createElement("div");
   div.className = "menu__item pizza";
-  div.innerHTML = `<div class="container">
+  div.innerHTML = `
+  <img src="${movies[i].youtubePoster}" class="d-block w-100 carusel-pic" alt="...">
+  <div class="container">
   <div class="hero-content">
     <div class="hero">
       <div class="hero__info">
@@ -291,7 +128,7 @@ for (let i = 1; i < 2; i++) {
           </div>
         </div>
         <p class="hero__text">${movies[i].summary}</p>
-        <a class="d-flex align-items-center watch-link" href="https://youtu.be/M7XM597XO94"><img class="me-2" src="img/Play.svg" alt="play" width="20" height="20"><p class="watch-text">Watch trailer</p></a>
+        <a class="d-flex align-items-center watch-link" href="${movies[i].imdbPage}"><img class="me-2" src="img/Play.svg" alt="play" width="20" height="20"><p class="watch-text">Watch trailer</p></a>
       </div>
     </div>
   </div>
@@ -299,10 +136,12 @@ for (let i = 1; i < 2; i++) {
 elcarouselitem2.appendChild(div);
 }
 
-for (let i = 3; i < 4; i++) {
+for (let i = 835; i <836; i++) {
   let div = document.createElement("div");
   div.className = "menu__item pizza";
-  div.innerHTML = `<div class="container">
+  div.innerHTML = `
+  <img src="${movies[i].youtubePoster}" class="d-block w-100 carusel-pic" alt="...">
+  <div class="container">
   <div class="hero-content">
     <div class="hero">
       <div class="hero__info">
@@ -318,7 +157,7 @@ for (let i = 3; i < 4; i++) {
           </div>
         </div>
         <p class="hero__text">${movies[i].summary}</p>
-        <a class="d-flex align-items-center watch-link" href="https://youtu.be/M7XM597XO94"><img class="me-2" src="img/Play.svg" alt="play" width="20" height="20"><p class="watch-text">Watch trailer</p></a>
+        <a class="d-flex align-items-center watch-link" href="${movies[i].imdbPage}"><img class="me-2" src="img/Play.svg" alt="play" width="20" height="20"><p class="watch-text">Watch trailer</p></a>
       </div>
     </div>
   </div>
@@ -347,7 +186,7 @@ elcarouselitem3.appendChild(div);
 
 
 
-// {/* <img src="${movies[i].youtubePoster}" alt=""> */}
+
 
 // movies.forEach((item) => {
 //   let li = document.createElement("li");
@@ -367,27 +206,27 @@ elcarouselitem3.appendChild(div);
 // });
 
 
-// shu joyidan modalga element qoshiladi .ishlamadi
-let elheart = document.querySelectorAll(".items-btn")
-for(let s = 0; s < elheart.length; s++) {
-  elheart[s].addEventListener("click" ,()=> {
+// // shu joyidan modalga element qoshiladi .ishlamadi
+// let elheart = document.querySelectorAll(".items-btn")
+// for(let s = 0; s < elheart.length; s++) {
+//   elheart[s].addEventListener("click" ,()=> {
 
-      let div = document.createElement("div");
-      div.className = "item";
-      div.innerHTML = `<div class="items">
-      <img id="items__img" src="${movies[s].youtubePoster}" alt="">
-      <p id="items__date">USA,${movies[s].year}</p>
-      <p id="items__movie-name">${movies[s].title}</p>
-      <span id="items__ranking">${movies[s].imdbRating} / 10</span>
-      <span class="items__category">${movies[s].categories}</span>
+//       let div = document.createElement("div");
+//       div.className = "item";
+//       div.innerHTML = `<div class="items">
+//       <img id="items__img" src="${movies[s].youtubePoster}" alt="">
+//       <p id="items__date">USA,${movies[s].year}</p>
+//       <p id="items__movie-name">${movies[s].title}</p>
+//       <span id="items__ranking">${movies[s].imdbRating} / 10</span>
+//       <span class="items__category">${movies[s].categories}</span>
     
-      </div>
-      `;
+//       </div>
+//       `;
      
-    // console.log(e.target.parentElement.parentElement);
-    ofcanvasitem.appendChild(div);
-  })
-}
+//     // console.log(e.target.parentElement.parentElement);
+//     ofcanvasitem.appendChild(div);
+//   })
+// }
 
 
 // for (let i = 50; i < 60; i++) {
