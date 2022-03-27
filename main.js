@@ -7,9 +7,6 @@ let elcarouselitem1 = document.querySelector("#carusel-item1")
 let elcarouselitem2 = document.querySelector("#carusel-item2")
 let elcarouselitem3 = document.querySelector("#carusel-item3")
 let eldatalist =document.querySelector(".datalist")
-// let eloption = createElement("option")
-// eloption.innerHTML = `${movies.categories}`
-// eldatalist.appendChild(eloption)
 
 
 let elheaderForm = document.querySelector("#header-form")
@@ -24,22 +21,47 @@ elheaderForm.addEventListener("submit", (e) => {
 // elheaderSearch.addEventListener("keyup" , searchel)
 // function searchel (e) {
 //   let textlar = e.target.value.toLowerCase()
+//   console.log(textlar);
 //   // let elementlar = elofcanvaslist.getElementsByTagName("li")
-//   let elmovi = movies.filter((el) => {
+//   // let elmovi = movies.forEach((el) => {
    
-//     // console.log(Array.from(el.title));
-//     for (let i = 0; i < Array.from(el.title).length; i++) {
-//       let newelement = el.title[i]
-//       // console.log(newelement);
-//       if (newelement.toLocaleLowerCase().indexOf(textlar) != -1) {
-//         // console.log(textlar);
-//         // el.title[i].pare.style.display = "none"
-//         console.log(el.title);
-//         // el.title.style.color = "red"
-//       }
-//     }
-//   })
+//   //   // console.log(Array.from(el.title));
+//   //   for (let i = 0; i < Array.from(el.title).length; i++) {
+//   //     let newelement = el.title[i]
+//   //     if (newelement.toLocaleLowerCase().indexOf(textlar) != -1) {
+//   //       console.log(el.title);
+//   //       // el.title.style.color = "red"
+//   //     }
+//   //   }
+//   // })
 // }
+
+
+
+
+
+
+
+// OPTION SORTIROFKA
+// let eloption = createElement("option")
+// eloption.innerHTML = `${movies.categories}`
+// eldatalist.appendChild(eloption)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // let elheart = document.querySelector("#items__btn")

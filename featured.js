@@ -521,6 +521,36 @@ for (let i = 9; i < 10; i++) {
 
 
 
+
+// elheaderSearch.addEventListener("keyup" , searchel)
+// function searchel (e) {
+//   let textlar = e.target.value.toLowerCase()
+//   console.log(textlar);
+//   let elmovi = movies.forEach((el) => {
+   
+//     // console.log(Array.from(el.title));
+//     for (let i = 0; i < Array.from(el.title).length; i++) {
+//       let newelement = el.title[i]
+//       if (newelement.toLocaleLowerCase().indexOf(textlar) != -1) {
+//         // console.log(el.title);
+//         if (el.title[i] == textlar) {
+//           console.log("salomlar");
+//           el.title.style.color = "red"
+//         }
+//       }
+//     }
+//   })
+// }
+
+
+
+
+
+
+
+
+
+
 // // shu joyidan modalga element qoshiladi .ishlamadi
 let elheart = document.querySelectorAll(".items-btn")
 for(let s = 0; s < elheart.length; s++) {
