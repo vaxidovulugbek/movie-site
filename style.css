@@ -12,6 +12,8 @@
 }
 body {
   font-family: 'DM Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
   /* background-color: #5f6572 !important; */
 }
 .content {
