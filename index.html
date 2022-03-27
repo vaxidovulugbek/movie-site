@@ -63,12 +63,12 @@
         </button>
       </div> -->
 
-      <!-- CARUSEL PART========================================== -->
+      <!--================================== CARUSEL PART========================================== -->
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">1</button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">2</button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active btn-slider1" aria-current="true" aria-label="Slide 1">1</button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="btn-slider2" aria-label="Slide 2">2</button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="btn-slider3" aria-label="Slide 3">3</button>
         </div>
         <div class="carousel-inner">
           <div id="carusel-item1"  class="carousel-item active">
@@ -100,7 +100,7 @@
           <input class="category input" type="text" list="date">
           <datalist id="date" class="datalist">
             <option>Action</option>
-            <option>Biography</option>
+            <!-- <option>Biography</option>
             <option>Documentary</option>
             <option>Drama</option>
             <option>Family</option>
@@ -110,20 +110,52 @@
             <option>Romance</option>
             <option>Comedy</option>
             <option>Adventure</option>
-            <option>News</option>
+            <option>News</option> -->
           </datalist>
-          <input type="search" id="search-input" class="input" placeholder="search movie">
-          <input class="input" id="last-name" type="number" placeholder="start" required>
-          <input class="input" id="tel" type="number" placeholder="end" required>
+          <!-- <input type="search" id="search-input" class="input" placeholder="search movie"> -->
+          <input class="input" id="start-year" type="number" placeholder="start" required>
+          <input class="input" id="end-year" type="number" placeholder="end" required>
           
-          <button class="btn btn-primary" type="submit">submit</button>
+          <button id="filter-btn" class="btn btn-primary" type="submit">submit</button>
         </form>
     </div>
+    <!-- ============================== START ALL VIDEOS ============================== -->
+    <div class="feature">
+      <div class="d-flex align-items-center justify-content-between mt-5 mb-5">
+        <h2 class="see-title">All Movie</h2>
+        <!-- <button class="d-flex align-items-center btn-see">See more <i class='bx bx-chevron-right ms-2'></i></button> -->
+      </div>
+        <div id="carousel5" class='outerWrapper' >
+          <div class="item newitem41"></div>
+          <div class="item newitem42"></div>
+          <div class="item newitem43"></div>
+          <div class="item newitem44"></div>
+          <div class="item newitem45"></div>
+          <div class="item newitem46"></div>
+          <div class="item newitem47"></div>
+          <div class="item newitem48"></div>
+          <div class="item newitem49"></div>
+          <div class="item newitem50"></div>
+          <div class="item newitem51"></div>
+          <div class="item newitem52"></div>
+          <div class="item newitem53"></div>
+          <div class="item newitem54"></div>
+          <div class="item newitem55"></div>
+          <div class="item newitem56"></div>
+          <div class="item newitem57"></div>
+          <div class="item newitem58"></div>
+          <div class="item newitem59"></div>
+          <div class="item newitem60"></div>
+        </div>
+      </div>
+
+
+
     <!-- ========================= START FEATURED VIDEOS ==================== -->
     <div class="feature">
       <div class="d-flex align-items-center justify-content-between mt-5 mb-5">
         <h2 class="see-title">Featured Movie</h2>
-        <button class="d-flex align-items-center btn-see">See more <i class='bx bx-chevron-right ms-2'></i></button>
+        <!-- <button class="d-flex align-items-center btn-see">See more <i class='bx bx-chevron-right ms-2'></i></button> -->
       </div>
         <div id="carousel1" class='outerWrapper' >
           <div class="item newitem1"></div>
@@ -142,7 +174,7 @@
     <div class="feature">
       <div class="d-flex align-items-center justify-content-between mt-5 mb-5">
         <h2 class="see-title">New Arrival</h2>
-        <button class="d-flex align-items-center btn-see">See more <i class='bx bx-chevron-right ms-2'></i></button>
+        <!-- <button class="d-flex align-items-center btn-see">See more <i class='bx bx-chevron-right ms-2'></i></button> -->
       </div>
       <div id="carousel2" class='outerWrapper' >
         <div class="item newitem11"></div>
@@ -163,7 +195,7 @@
     <div class="feature">
       <div class="d-flex align-items-center justify-content-between mt-5 mb-5">
         <h2 class="see-title">Exclusive Videos</h2>
-        <button class="d-flex align-items-center btn-see">See more <i class='bx bx-chevron-right ms-2'></i></button>
+        <!-- <button class="d-flex align-items-center btn-see">See more <i class='bx bx-chevron-right ms-2'></i></button> -->
       </div>
       <div id="carousel3" class='outerWrapper' >
         <div class="item2 newitem21"></div>
@@ -183,7 +215,7 @@
     <div class="feature">
       <div class="d-flex align-items-center justify-content-between mt-5 mb-5">
         <h2 class="see-title">Featured Casts</h2>
-        <button class="d-flex align-items-center btn-see">See more <i class='bx bx-chevron-right ms-2'></i></button>
+        <!-- <button class="d-flex align-items-center btn-see">See more <i class='bx bx-chevron-right ms-2'></i></button> -->
       </div>
       <div id="carousel4" class='outerWrapper' >
         <div class="item newitem31"></div>
@@ -216,7 +248,7 @@
         <a class="footer-info" href="#">Privacy & Policy</a>
         <a class="footer-info" href="#">Press Room</a>
       </div>
-      <span>© 2021 MovieBox by Adriana Eka Prayudha  </span>
+      <span>© 2022 MovieBox by Ulugbek Vaxidov </span>
     </div>
   </div>
 </footer>
@@ -240,6 +272,7 @@
 <script>$('#carousel2').waltzer({scroll:1});</script>
 <script>$('#carousel3').waltzer({scroll:1});</script>
 <script>$('#carousel4').waltzer({scroll:1});</script>
+<script>$('#carousel5').waltzer({scroll:1});</script>
   <script src="normalized-movies.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="main.js"></script>
@@ -247,6 +280,7 @@
   <script src="new-arrival.js"></script>
   <script src="exclusiv.js"></script>
   <script src="featured-cast.js"></script>
+  <script src="all-videos.js"></script>
 </body>
 </html>
 

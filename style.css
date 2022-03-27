@@ -15,7 +15,9 @@ body {
   display: flex;
   flex-direction: column;
   /* background-color: #5f6572 !important; */
+  overflow-x: hidden;
 }
+
 .content {
   min-height: 100vh;
   height: 100%;
@@ -157,6 +159,32 @@ body {
   border: none;
   background-color: transparent;
 }
+#items__btn1,
+#items__btn2,
+#items__btn3,
+#items__btn4,
+#items__btn5,
+#items__btn6,
+#items__btn7,
+#items__btn8,
+#items__btn9,
+#items__btn10, 
+#items__btn11,
+#items__btn12,
+#items__btn13,
+#items__btn14,
+#items__btn15,
+#items__btn16,
+#items__btn17,
+#items__btn18,
+#items__btn19,
+#items__btn20{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+}
 #items__img {
   width: 100%;
   /* height: auto; */
@@ -245,10 +273,6 @@ body {
   color: #000;
 }
 
-/* .form-content {
-  margin: ;
-} */
-
 .items__modal {
   border: none;
   padding: 2px 12px;
@@ -317,6 +341,41 @@ body {
   list-style: none;
 }
 
+/*================================= CARUSEL PART======================== */
+.carousel-indicators {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-slider1 {
+  z-index: 2000;
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  right: -65%;
+  top: -500px;
+  box-shadow: -2px 0px 61px 33px rgba(34, 60, 80, 0.2);
+}
+
+.btn-slider2 {
+  z-index: 2000;
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  right: -65%;
+  top: -460px;
+  box-shadow: -2px 0px 61px 33px rgba(34, 60, 80, 0.2);
+}
+
+.btn-slider3 {
+  z-index: 2000;
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  right: -65%;
+  top: -420px;
+  box-shadow: -2px 0px 61px 33px rgba(34, 60, 80, 0.2);
+}
 
 @media screen and (max-width:960px){
   .logo{
@@ -338,9 +397,6 @@ body {
     width: 120px;
     height: 50px;
   }
-  /* #heart-btn {
-    width: 10%;
-  } */
 }
 
 

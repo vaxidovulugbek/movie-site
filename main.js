@@ -18,23 +18,27 @@ elheaderForm.addEventListener("submit", (e) => {
 })
 
 // SEARCH HOLATI HERODAGI
-// elheaderSearch.addEventListener("keyup" , searchel)
-// function searchel (e) {
-//   let textlar = e.target.value.toLowerCase()
-//   console.log(textlar);
-//   // let elementlar = elofcanvaslist.getElementsByTagName("li")
-//   // let elmovi = movies.forEach((el) => {
+elheaderSearch.addEventListener("keyup" , searchel)
+function searchel (e) {
+  let textlar = e.target.value.toLowerCase()
+  console.log(textlar);
+  for (let i = 0; i < movies.length; i++) {
+    console.log(movies[i].title);
+  }
+  // let elementlar = elofcanvaslist.getElementsByTagName("li")
+  // let elmovi = movies.forEach((el) => {
    
-//   //   // console.log(Array.from(el.title));
-//   //   for (let i = 0; i < Array.from(el.title).length; i++) {
-//   //     let newelement = el.title[i]
-//   //     if (newelement.toLocaleLowerCase().indexOf(textlar) != -1) {
-//   //       console.log(el.title);
-//   //       // el.title.style.color = "red"
-//   //     }
-//   //   }
-//   // })
-// }
+  //   // console.log(Array.from(el.title));
+  //   for (let i = 0; i < Array.from(el.title).length; i++) {
+  //     let newelement = el.title[i]
+  //     if (newelement.toLocaleLowerCase().indexOf(textlar) != -1) {
+  //       console.log(el.title);
+  //       // el.title.style.color = "red"
+  //     }
+  //   }
+  // })
+
+}
 
 
 
@@ -43,10 +47,16 @@ elheaderForm.addEventListener("submit", (e) => {
 
 
 // OPTION SORTIROFKA
-// let eloption = createElement("option")
-// eloption.innerHTML = `${movies.categories}`
+// let eloption = document.createElement("option")
+// eloption.innerHTML = `${movies.title}`
 // eldatalist.appendChild(eloption)
 
+for (let i = 0; i < movies.length; i++) {
+  let eloption = document.createElement("option")
+  eloption.innerHTML = `${movies[i].categories[0]}`
+  // if (movies[i].categories[0].value == movies[i].categories[0])
+  eldatalist.appendChild(eloption)
+}
 
 
 

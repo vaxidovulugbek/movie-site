@@ -15,7 +15,7 @@ for (let i = 31; i < 32; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn11"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -65,7 +65,7 @@ for (let i = 32; i < 33; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn12"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -116,7 +116,7 @@ for (let i = 33; i < 34; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn13"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -166,7 +166,7 @@ for (let i = 34; i < 35; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn14"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -218,7 +218,7 @@ for (let i = 35; i < 36; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn15"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -269,7 +269,7 @@ for (let i = 36; i < 37; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn16"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -320,7 +320,7 @@ for (let i = 37; i < 38; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn17"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -372,7 +372,7 @@ for (let i = 38; i < 39; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn18"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -423,7 +423,7 @@ for (let i = 39; i < 40; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn19"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -474,7 +474,7 @@ for (let i = 40; i < 41; i++) {
   div.className = "item2";
   div.innerHTML = `<div class="items">
   <img id="items__img" src="${movies[i].youtubePoster}" alt="">
-  <button class="items-btn3" id="items__btn"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+  <button class="items-btn3" id="items__btn20"><img src="img/heart.svg" alt="" width="32" height="32"></button>
   <p id="items__date">USA,${movies[i].year}</p>
   <p id="items__movie-name">${movies[i].title}</p>
   <div class="items__info">
@@ -520,29 +520,247 @@ for (let i = 40; i < 41; i++) {
 
 
 // shu joyidan modalga element qoshiladi .ishlamadi
-let elheart3 = document.querySelectorAll(".items-btn3")
-for(let s = 0; s < elheart3.length; s++) {
-  elheart3[s].addEventListener("click" ,(e)=> {
-    console.log(e.target);
+// let elheart3 = document.querySelectorAll(".items-btn3")
+// for(let s = 0; s < elheart3.length; s++) {
+//   elheart3[s].addEventListener("click" ,(e)=> {
+//     console.log(e.target);
 
+//       let div = document.createElement("div");
+//       div.className = "item5";
+//       div.innerHTML = `<div class="items">
+//       <img id="items__img" src="${movies[s].youtubePoster}" alt="">
+//       <p id="items__date">USA,${movies[s].year}</p>
+//       <p id="items__movie-name">${movies[s].title}</p>
+//       <span id="items__ranking">${movies[s].imdbRating} / 10</span>
+//       <span class="items__category">${movies[s].categories}</span>
+    
+//       </div>
+//       `;
+//     console.log(e.target.parentElement.parentElement.parentElement.parentElement);
+//     ofcanvasitem.appendChild(div);
+//   })
+// }
+
+
+
+
+
+
+
+
+
+
+
+let elheartbtn31 = document.querySelector("#items__btn11")
+  for (let s = 31; s < 32; s++) {
+    elheartbtn31.addEventListener("click" , (e)=> {
+      console.log(e.target);
       let div = document.createElement("div");
       div.className = "item5";
-      div.innerHTML = `<div class="items">
-      <img id="items__img" src="${movies[s].youtubePoster}" alt="">
-      <p id="items__date">USA,${movies[s].year}</p>
-      <p id="items__movie-name">${movies[s].title}</p>
-      <span id="items__ranking">${movies[s].imdbRating} / 10</span>
-      <span class="items__category">${movies[s].categories}</span>
-    
-      </div>
-      `;
-    console.log(e.target.parentElement.parentElement.parentElement.parentElement);
-    ofcanvasitem.appendChild(div);
-  })
-}
+        div.innerHTML = `<div class="items">
+        <img id="items__img" src="${movies[s].youtubePoster}" alt="">
+        <p id="items__date">USA,${movies[s].year}</p>
+        <p id="items__movie-name">${movies[s].title}</p>
+        <span id="items__ranking">${movies[s].imdbRating} / 10</span>
+        <span class="items__category">${movies[s].categories}</span>
+        
+        </div>
+        `;
+      console.log(e.target.parentElement.parentElement.parentElement.parentElement);
+      ofcanvasitem.appendChild(div);
+    })
+  }
+
+
+  let elheartbtn32 = document.querySelector("#items__btn12")
+  for (let s = 32; s < 33; s++) {
+    elheartbtn32.addEventListener("click" , (e)=> {
+      console.log(e.target);
+      let div = document.createElement("div");
+      div.className = "item5";
+        div.innerHTML = `<div class="items">
+        <img id="items__img" src="${movies[s].youtubePoster}" alt="">
+        <p id="items__date">USA,${movies[s].year}</p>
+        <p id="items__movie-name">${movies[s].title}</p>
+        <span id="items__ranking">${movies[s].imdbRating} / 10</span>
+        <span class="items__category">${movies[s].categories}</span>
+        
+        </div>
+        `;
+      console.log(e.target.parentElement.parentElement.parentElement.parentElement);
+      ofcanvasitem.appendChild(div);
+    })
+  }
+
+
+  
+  let elheartbtn33 = document.querySelector("#items__btn13")
+  for (let s = 33; s < 34; s++) {
+    elheartbtn33.addEventListener("click" , (e)=> {
+      console.log(e.target);
+      let div = document.createElement("div");
+      div.className = "item5";
+        div.innerHTML = `<div class="items">
+        <img id="items__img" src="${movies[s].youtubePoster}" alt="">
+        <p id="items__date">USA,${movies[s].year}</p>
+        <p id="items__movie-name">${movies[s].title}</p>
+        <span id="items__ranking">${movies[s].imdbRating} / 10</span>
+        <span class="items__category">${movies[s].categories}</span>
+        
+        </div>
+        `;
+      console.log(e.target.parentElement.parentElement.parentElement.parentElement);
+      ofcanvasitem.appendChild(div);
+    })
+  }
+
+
+  let elheartbtn34 = document.querySelector("#items__btn14")
+  for (let s = 34; s < 35; s++) {
+    elheartbtn34.addEventListener("click" , (e)=> {
+      console.log(e.target);
+      let div = document.createElement("div");
+      div.className = "item5";
+        div.innerHTML = `<div class="items">
+        <img id="items__img" src="${movies[s].youtubePoster}" alt="">
+        <p id="items__date">USA,${movies[s].year}</p>
+        <p id="items__movie-name">${movies[s].title}</p>
+        <span id="items__ranking">${movies[s].imdbRating} / 10</span>
+        <span class="items__category">${movies[s].categories}</span>
+        
+        </div>
+        `;
+      console.log(e.target.parentElement.parentElement.parentElement.parentElement);
+      ofcanvasitem.appendChild(div);
+    })
+  }
+
+
+  let elheartbtn35 = document.querySelector("#items__btn15")
+  for (let s = 35; s < 36; s++) {
+    elheartbtn35.addEventListener("click" , (e)=> {
+      console.log(e.target);
+      let div = document.createElement("div");
+      div.className = "item5";
+        div.innerHTML = `<div class="items">
+        <img id="items__img" src="${movies[s].youtubePoster}" alt="">
+        <p id="items__date">USA,${movies[s].year}</p>
+        <p id="items__movie-name">${movies[s].title}</p>
+        <span id="items__ranking">${movies[s].imdbRating} / 10</span>
+        <span class="items__category">${movies[s].categories}</span>
+        
+        </div>
+        `;
+      console.log(e.target.parentElement.parentElement.parentElement.parentElement);
+      ofcanvasitem.appendChild(div);
+    })
+  }
 
 
 
+  let elheartbtn36 = document.querySelector("#items__btn16")
+  for (let s = 36; s < 37; s++) {
+    elheartbtn36.addEventListener("click" , (e)=> {
+      console.log(e.target);
+      let div = document.createElement("div");
+      div.className = "item5";
+        div.innerHTML = `<div class="items">
+        <img id="items__img" src="${movies[s].youtubePoster}" alt="">
+        <p id="items__date">USA,${movies[s].year}</p>
+        <p id="items__movie-name">${movies[s].title}</p>
+        <span id="items__ranking">${movies[s].imdbRating} / 10</span>
+        <span class="items__category">${movies[s].categories}</span>
+        
+        </div>
+        `;
+      console.log(e.target.parentElement.parentElement.parentElement.parentElement);
+      ofcanvasitem.appendChild(div);
+    })
+  }
+
+
+  let elheartbtn37 = document.querySelector("#items__btn17")
+  for (let s = 37; s < 38; s++) {
+    elheartbtn37.addEventListener("click" , (e)=> {
+      console.log(e.target);
+      let div = document.createElement("div");
+      div.className = "item5";
+        div.innerHTML = `<div class="items">
+        <img id="items__img" src="${movies[s].youtubePoster}" alt="">
+        <p id="items__date">USA,${movies[s].year}</p>
+        <p id="items__movie-name">${movies[s].title}</p>
+        <span id="items__ranking">${movies[s].imdbRating} / 10</span>
+        <span class="items__category">${movies[s].categories}</span>
+        
+        </div>
+        `;
+      console.log(e.target.parentElement.parentElement.parentElement.parentElement);
+      ofcanvasitem.appendChild(div);
+    })
+  }
+
+
+  let elheartbtn38 = document.querySelector("#items__btn18")
+  for (let s = 38; s < 39; s++) {
+    elheartbtn38.addEventListener("click" , (e)=> {
+      console.log(e.target);
+      let div = document.createElement("div");
+      div.className = "item5";
+        div.innerHTML = `<div class="items">
+        <img id="items__img" src="${movies[s].youtubePoster}" alt="">
+        <p id="items__date">USA,${movies[s].year}</p>
+        <p id="items__movie-name">${movies[s].title}</p>
+        <span id="items__ranking">${movies[s].imdbRating} / 10</span>
+        <span class="items__category">${movies[s].categories}</span>
+        
+        </div>
+        `;
+      console.log(e.target.parentElement.parentElement.parentElement.parentElement);
+      ofcanvasitem.appendChild(div);
+    })
+  }
+
+
+  let elheartbtn39 = document.querySelector("#items__btn19")
+  for (let s = 39; s < 40; s++) {
+    elheartbtn39.addEventListener("click" , (e)=> {
+      console.log(e.target);
+      let div = document.createElement("div");
+      div.className = "item5";
+        div.innerHTML = `<div class="items">
+        <img id="items__img" src="${movies[s].youtubePoster}" alt="">
+        <p id="items__date">USA,${movies[s].year}</p>
+        <p id="items__movie-name">${movies[s].title}</p>
+        <span id="items__ranking">${movies[s].imdbRating} / 10</span>
+        <span class="items__category">${movies[s].categories}</span>
+        
+        </div>
+        `;
+      console.log(e.target.parentElement.parentElement.parentElement.parentElement);
+      ofcanvasitem.appendChild(div);
+    })
+  }
+
+
+  let elheartbtn40 = document.querySelector("#items__btn20")
+  for (let s = 40; s < 41; s++) {
+    elheartbtn40.addEventListener("click" , (e)=> {
+      console.log(e.target);
+      let div = document.createElement("div");
+      div.className = "item5";
+        div.innerHTML = `<div class="items">
+        <img id="items__img" src="${movies[s].youtubePoster}" alt="">
+        <p id="items__date">USA,${movies[s].year}</p>
+        <p id="items__movie-name">${movies[s].title}</p>
+        <span id="items__ranking">${movies[s].imdbRating} / 10</span>
+        <span class="items__category">${movies[s].categories}</span>
+        
+        </div>
+        `;
+      console.log(e.target.parentElement.parentElement.parentElement.parentElement);
+      ofcanvasitem.appendChild(div);
+    })
+  }
 
 
 
