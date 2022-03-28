@@ -1252,19 +1252,19 @@ for (let i = 9; i < 10; i++) {
 
 // ======================== START FILTER PART =========================//
 
-// let elStartYear = document.querySelector("#start-year")
-// let elEndYear = document.querySelector("#end-year")
-// let elFilterBtn = document.querySelector("#filter-btn")
+let elStartYear = document.querySelector("#start-year")
+let elEndYear = document.querySelector("#end-year")
+let elFilterBtn = document.querySelector("#filter-btn")
 
-// elFilterBtn.addEventListener("click", (e) => {
-//   e.preventDefault()
-//   for (let i = 0; i < 2; i++) {
-//     let a = movies.filter((el) =>{
-//       if (el.year > eval(elStartYear.value) && el.year <= eval(elEndYear.value)) return true
-//     })
-//     console.log(a);
-//   }
-// })
+elFilterBtn.addEventListener("click", (e) => {
+  e.preventDefault()
+  for (let i = 0; i < 2; i++) {
+    let a = movies.filter((el) =>{
+      if (el.year > eval(elStartYear.value) && el.year <= eval(elEndYear.value)) return true
+    })
+    console.log(a);
+  }
+})
 
 
 
