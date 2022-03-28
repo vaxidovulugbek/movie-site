@@ -1255,12 +1255,16 @@ for (let i = 9; i < 10; i++) {
 let elStartYear = document.querySelector("#start-year")
 let elEndYear = document.querySelector("#end-year")
 let elFilterBtn = document.querySelector("#filter-btn")
+let elcarousel5 = document.querySelector("#carousel5")
 
 elFilterBtn.addEventListener("click", (e) => {
   e.preventDefault()
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < 1; i++) {
     let a = movies.filter((el) =>{
       if (el.year > eval(elStartYear.value) && el.year <= eval(elEndYear.value)) return true
+      elcarousel5.filter((el) => {
+        el.style.color = "red"
+      })
     })
     console.log(a);
   }
