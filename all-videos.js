@@ -1252,23 +1252,98 @@ for (let i = 9; i < 10; i++) {
 
 // ======================== START FILTER PART =========================//
 
-let elStartYear = document.querySelector("#start-year")
-let elEndYear = document.querySelector("#end-year")
-let elFilterBtn = document.querySelector("#filter-btn")
-let elcarousel5 = document.querySelector("#carousel5")
+// let elStartYear = document.querySelector("#start-year")
+// let elEndYear = document.querySelector("#end-year")
+// let elFilterBtn = document.querySelector("#filter-btn")
+// let elcarousel5 = document.querySelector("#carousel5")
 
-elFilterBtn.addEventListener("click", (e) => {
-  e.preventDefault()
-  for (let i = 0; i < 1; i++) {
-    let a = movies.filter((el) =>{
-      if (el.year > eval(elStartYear.value) && el.year <= eval(elEndYear.value)) return true
-      elcarousel5.filter((el) => {
-        el.style.color = "red"
-      })
-    })
-    console.log(a);
-  }
-})
+
+// elFilterBtn.addEventListener("click", (e) => {
+//   e.preventDefault()
+//   for (let i = 0; i < movies.length; i++) {
+//     let a = movies.filter((el) =>{
+//       if (el.year > eval(elStartYear.value) && el.year <= eval(elEndYear.value))
+      
+//       return true
+//       // console.log(a);
+//     })
+//   }
+// })
+
+const elFilForm = document.getElementById('formmm');
+const elText = document.getElementById('forminput');
+const elOption = document.getElementById('filter-option');
+const elStart = document.getElementById('start-year');
+const elEnd = document.getElementById('end-year');
+const elDate = document.getElementById('date');
+const elFilList = document.getElementById('filter-list');
+
+
+elFilForm.addEventListener("submit", (e) =>{
+  e.preventDefault();
+  let textValue = elText.value.toLowerCase();
+  let optionValue = elOption.value.toLowerCase();
+  let dateValue = elDate.value.toLowerCase();
+  let startValue = elStart.value;
+  let endValue = elEnd.value;
+  movies.forEach(item =>{
+    let text = item.title.toLowerCase();
+    let elcate = item.categories.toLowerCase();
+    if(text.indexOf(textValue) != -1 && item.year >= startValue && item.year <= endValue){
+      let li = document.createElement("li");
+      li.className = 'item2';
+      li.innerHTML = `
+      <div class="items">
+      <img id="items__img" src="${movies[i].youtubePoster}" alt="">
+      <button class="items-btn2" id="items__btn2"><img src="img/heart.svg" alt="" width="32" height="32"></button>
+      <p id="items__date">USA,${movies[i].year}</p>
+      <p id="items__movie-name">${movies[i].title}</p>
+      <div class="items__info">
+        <div class="d-flex align-items-center">
+          <img class="me-2" src="img/imb.png" alt="" width="35" height="17">
+          <span id="items__ranking">${movies[i].imdbRating} / 10</span>
+        </div>
+        <div class="d-flex align-items-center">
+          <img class="me-2" src="img/potato.png" alt="" width="16" height="17">
+          <span id="items__procent">75%</span>
+        </div>
+      </div>
+      <span class="items__category">${movies[i].categories}</span>
+      <div>
+        <button class="items__modal" data-bs-target="#exampleModalToggle${idx22}" data-bs-toggle="modal">modal</button>
+        <div class="modal fade" id="exampleModalToggle${idx22}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <p class="modal-title modal-movi-name" id="modal__movie-name">${movies[i].title}</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body d-flex align-items-center">
+                <img class="modal-img me-4" src="${movies[i].youtubePoster}" alt="">
+                <div class="d-flex flex-column">
+                  <p id="modal__date">USA, ${movies[i].year}</p>
+                  <p class="modal-movi-name" id="modal__movie-name">${movies[i].title}</p>
+                  <p>${movies[i].summary}</p>
+                  <span id="modal__ranking">${movies[i].imdbRating} / 10</span>
+                  <span class="items__category mt-5">${movies[i].categories}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  `;
+      elFilList.appendChild(li);
+      // item.categories.forEach(item =>{
+
+      // })
+    }
+    // textValue.innerHTML = "";
+    // startValue.value = "";
+    // endValue.value = "";
+  });
+});
 
 
 
