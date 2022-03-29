@@ -1278,54 +1278,54 @@ const elEnd = document.getElementById('end-year');
 const elDate = document.getElementById('date');
 const elFilList = document.getElementById('filter-list');
 
-
+let idx = 0
 elFilForm.addEventListener("submit", (e) =>{
   e.preventDefault();
   let textValue = elText.value.toLowerCase();
-  let optionValue = elOption.value.toLowerCase();
-  let dateValue = elDate.value.toLowerCase();
+  // let optionValue = elOption.value.toLowerCase();
+  // let dateValue = elDate.value.toLowerCase();
   let startValue = elStart.value;
   let endValue = elEnd.value;
   movies.forEach(item =>{
     let text = item.title.toLowerCase();
-    let elcate = item.categories.toLowerCase();
+    // let elcate = item.categories.toLowerCase();
     if(text.indexOf(textValue) != -1 && item.year >= startValue && item.year <= endValue){
       let li = document.createElement("li");
-      li.className = 'item2';
+      li.className = 'movie__main';
       li.innerHTML = `
       <div class="items">
-      <img id="items__img" src="${movies[i].youtubePoster}" alt="">
+      <img id="items__img" src="${item.youtubePoster}" alt="">
       <button class="items-btn2" id="items__btn2"><img src="img/heart.svg" alt="" width="32" height="32"></button>
-      <p id="items__date">USA,${movies[i].year}</p>
-      <p id="items__movie-name">${movies[i].title}</p>
+      <p id="items__date">USA,${item.year}</p>
+      <p id="items__movie-name">${item.title}</p>
       <div class="items__info">
         <div class="d-flex align-items-center">
           <img class="me-2" src="img/imb.png" alt="" width="35" height="17">
-          <span id="items__ranking">${movies[i].imdbRating} / 10</span>
+          <span id="items__ranking">${item.imdbRating} / 10</span>
         </div>
         <div class="d-flex align-items-center">
           <img class="me-2" src="img/potato.png" alt="" width="16" height="17">
           <span id="items__procent">75%</span>
         </div>
       </div>
-      <span class="items__category">${movies[i].categories}</span>
+      <span class="items__category">${item.categories}</span>
       <div>
-        <button class="items__modal" data-bs-target="#exampleModalToggle${idx22}" data-bs-toggle="modal">modal</button>
-        <div class="modal fade" id="exampleModalToggle${idx22}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <button class="items__modal" data-bs-target="#exampleModalToggle${idx}" data-bs-toggle="modal">modal</button>
+        <div class="modal fade" id="exampleModalToggle${idx}" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <p class="modal-title modal-movi-name" id="modal__movie-name">${movies[i].title}</p>
+                <p class="modal-title modal-movi-name" id="modal__movie-name">${item.title}</p>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body d-flex align-items-center">
-                <img class="modal-img me-4" src="${movies[i].youtubePoster}" alt="">
+                <img class="modal-img me-4" src="${item.youtubePoster}" alt="">
                 <div class="d-flex flex-column">
-                  <p id="modal__date">USA, ${movies[i].year}</p>
-                  <p class="modal-movi-name" id="modal__movie-name">${movies[i].title}</p>
-                  <p>${movies[i].summary}</p>
-                  <span id="modal__ranking">${movies[i].imdbRating} / 10</span>
-                  <span class="items__category mt-5">${movies[i].categories}</span>
+                  <p id="modal__date">USA, ${item.year}</p>
+                  <p class="modal-movi-name" id="modal__movie-name">${item.title}</p>
+                  <p>${item.summary}</p>
+                  <span id="modal__ranking">${item.imdbRating} / 10</span>
+                  <span class="items__category mt-5">${item.categories}</span>
                 </div>
               </div>
             </div>
@@ -1334,6 +1334,7 @@ elFilForm.addEventListener("submit", (e) =>{
       </div>
       </div>
   `;
+  idx++
       elFilList.appendChild(li);
       // item.categories.forEach(item =>{
 
